@@ -1,0 +1,87 @@
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Open Sans', sans-serif;
+    color: #D6D6D6;
+}
+p{
+    color: #c0c0c0;
+    font-size: 20px;
+}
+#intro{
+    height: 10vh;
+    background-color:#4C5258;
+}
+
+#intro h1{
+    font-weight: 700;
+    font-size: 5vh;
+    color:#ebebeb;
+}
+
+#control .controlDiv{
+    height:50vh;
+}
+#control .form-control-color{
+    height:40px;
+    width:45px;
+    background-color: #4C5258;
+    
+}
+
+#swatch{
+background: white;
+box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
+display: flex;
+flex-direction: column;
+width: 120px;
+height: 120px;
+border-radius: 50px;
+}
+
+#swatch h1{
+margin: 0;
+text-transform: uppercase;
+}
+
+#swatch h2{
+font-weight: normal;
+margin: 0;
+}
+
+input[type="color"] {
+appearance: none;
+-moz-appearance: none;
+-webkit-appearance: none;
+background: none;
+border: 0;
+cursor: pointer;
+height: 15em;
+padding: 0;
+width: 15em;
+width: 120px;
+height: 120px;
+border-radius: 25px;
+}
+
+*:focus{
+border-radius: 0;
+outline: none;
+}
+
+::-webkit-color-swatch-wrapper {
+padding: 0;
+}
+
+::-webkit-color-swatch{
+border: 0;
+border-radius: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner{
+border: 0;
+}
+
+::-moz-focus-inner{
+padding: 0;
+}
+
