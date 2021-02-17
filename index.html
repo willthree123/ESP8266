@@ -2,6 +2,8 @@
 
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,11 +13,11 @@
         <title>WF Control Panel</title>
     </head>    
     
-    <body class="bg-dark">
+    <body>
         <section id='intro'>
             <div class = "col-md-12">
                 <div class="container d-flex h-100">
-                    <div class="row justify-content-center align-self-center">
+                    <div class="row justify-content-center align-self-center ">
                         <H1>WF Control Panel</H1>
                     </div>
                 </div>
@@ -23,28 +25,30 @@
         </section>
         <section id='control'>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 controlDiv">
-                        <div class="container d-flex h-100 ">
-                            <div class="row w-75">
+                <div class="row d-flex justify-content-center mx-md-n5">
+                        <div class="col-md-4 pickerDiv  container d-flex h-100 justify-content-center mt-3">
+                            <div class="row w-75 justify-content-center ">
                                 <form>
                                     <center>
-                                        <label for="ColorInput" class="form-label mt-4"><h2>Color picker</h2></label>
-                                        <div id="swatch p-1">
-                                            <br>
-                                            <input type="color" id="color" name="color" value="#6E6E6E">
-                                        </div>    
-                                        <br>
+                                        <label for="ColorInput" class="form-label mt-4"></label><h2>Color Picker</h2></label>
+                                        <input type="color" id="color" name="color" value="#6E6E6E" class="m-4">
                                         <p>Brightness: <span id="Bdisplay"></span></p>
                                         <input class="form-range" id="Bslider" min="0" max="255" value="10" type="range">
-                                        <input class="btn btn-outline-light rounded-pill mt-5 btn-lg" type="submit">
+                                        <input class="btn btn-outline-light rounded-pill mt-4 mb-4 btn-lg" type="submit" value="Set Led">
                                     </center>
                                 </form>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-8 bg-warning controlDiv">
-                        <H1>This 8</H1>
+                    <div class="col-md-7 ButtonDiv row d-flex p-4 mt-3">
+                        <div>
+                        <H2>Present Led Effect</H2>
+                        
+                        <form>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+                            <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+                        </form>
+                        </div>
+                        <H2 class="Current">Current Led Effect:</H2>
                     </div>
                 </div>
             </div>
